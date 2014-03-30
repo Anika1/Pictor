@@ -11,5 +11,6 @@
 @interface XYZViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIToolbar *cameraButton;
 - (IBAction)cameraButtonPressed:(id)sender;
+@property (weak, nonatomic) IBOutlet UIImageView *Photo;
 
 @end
