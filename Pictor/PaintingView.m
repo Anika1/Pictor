@@ -458,8 +458,9 @@ typedef struct {
 	
 	// Add points to the buffer so there are drawing points every X pixels
 	count = MAX(ceilf(sqrtf((end.x - start.x) * (end.x - start.x) + (end.y - start.y) * (end.y - start.y)) / kBrushPixelStep), 1);
-	for(i = 0; i < count; ++i) {
-        kBrushOpacity = 
+	
+    for(i = 0; i < count; ++i) {
+        
 		if(vertexCount == vertexMax) {
 			vertexMax = 2 * vertexMax;
 			vertexBuffer = realloc(vertexBuffer, vertexMax * 2 * sizeof(GLfloat));
