@@ -32,7 +32,15 @@
 @end
 
 @implementation PicViewController
+<<<<<<< HEAD
 @synthesize imageView;
+=======
+
+- (IBAction)clearTouched:(id)sender {
+    [self eraseView];
+}
+
+>>>>>>> FETCH_HEAD
 - (IBAction)redTouched:(id)sender {
     [self changeBrushColorWithRed: 255/255.0f Green:63/255.0f Blue:46/255.0f];
     NSLog(@"Red");
@@ -59,15 +67,15 @@
 }
 
 - (IBAction)smallTouched:(id)sender {
+    // [self.paintView setBrushWidth:0.33];
 }
 
 - (IBAction)mediumTouched:(id)sender {
+    //   [self.paintView setBrushWidth:0.66];
 }
 
 - (IBAction)largeTouched:(id)sender {
-}
-
-- (IBAction)clearTouched:(id)sender {
+    //  [self.paintView setBrushWidth:1.0];
 }
 
 - (void)viewDidLoad
@@ -106,6 +114,18 @@
 }
 
 - (IBAction)cameraButtonPressed:(id)sender {
+<<<<<<< HEAD
+    
+    
+    //isSourceTypeAvailable: UIImagePickerControllerSourceTypeSavedPhotosAlbum;
+    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+    picker.delegate = self;
+    picker.allowsEditing = YES;
+    picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    
+    [self presentViewController:picker animated:YES completion:NULL];
+    
+=======
     UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"Take Picture", @"Select Photo",nil];
 	actionSheet.actionSheetStyle = UIActionSheetStyleDefault;
 	[actionSheet showInView:self.view];
@@ -141,6 +161,7 @@
 	{
 	}
 	
+>>>>>>> FETCH_HEAD
 }
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
@@ -171,5 +192,8 @@
     
 }
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> FETCH_HEAD
 @end
