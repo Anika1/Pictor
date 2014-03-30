@@ -61,5 +61,6 @@
 
 - (void)erase;
 - (void)setBrushColorWithRed:(CGFloat)red green:(CGFloat)green blue:(CGFloat)blue;
+//- (void)setBrushWidth:(CGFloat)width;
 
 @end
