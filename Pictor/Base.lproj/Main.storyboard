@@ -208,6 +208,7 @@
                         </barButtonItem>
                     </toolbarItems>
                     <navigationItem key="navigationItem" id="x41-d8-CUt">
+                        <barButtonItem key="leftBarButtonItem" systemItem="camera" id="5q0-oG-L1s"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="action" id="v5F-Ba-eub">
                             <color key="tintColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                         </barButtonItem>
