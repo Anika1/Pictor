@@ -173,16 +173,11 @@
 			isa = PBXGroup;
 			children = (
 				D9F0D99A18E7B435001BF205 /* Assets */,
-				D9F0D9B218E7B435001BF205 /* debug.h */,
-				D9F0D9B318E7B435001BF205 /* fileUtil.h */,
-				D9F0D9B418E7B435001BF205 /* fileUtil.m */,
 				D9F0D9B518E7B435001BF205 /* PaintingView.h */,
 				D9F0D9B618E7B435001BF205 /* PaintingView.m */,
 				D9F0D9B718E7B435001BF205 /* PicViewController.h */,
 				D9F0D9B818E7B435001BF205 /* PicViewController.m */,
 				D9F0D9B918E7B435001BF205 /* Relationship-arrow.png */,
-				D9F0D9BA18E7B435001BF205 /* shaderUtil.c */,
-				D9F0D9BB18E7B435001BF205 /* shaderUtil.h */,
 				84A3A2AB18E74AF500409E73 /* XYZAppDelegate.h */,
 				84A3A2AC18E74AF500409E73 /* XYZAppDelegate.m */,
 				84A3A2AE18E74AF500409E73 /* Main.storyboard */,
@@ -199,6 +194,11 @@
 		84A3A2A318E74AF500409E73 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D9F0D9B218E7B435001BF205 /* debug.h */,
+				D9F0D9B318E7B435001BF205 /* fileUtil.h */,
+				D9F0D9B418E7B435001BF205 /* fileUtil.m */,
+				D9F0D9BA18E7B435001BF205 /* shaderUtil.c */,
+				D9F0D9BB18E7B435001BF205 /* shaderUtil.h */,
 				84A3A2A418E74AF500409E73 /* Pictor-Info.plist */,
 				84A3A2A518E74AF500409E73 /* InfoPlist.strings */,
 				84A3A2A818E74AF500409E73 /* main.m */,

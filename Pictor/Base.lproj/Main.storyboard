@@ -36,6 +36,7 @@
                     <connections>
                         <outlet property="Photo" destination="b6J-7B-hr0" id="4YR-Ub-e1Q"/>
                         <outlet property="cameraButton" destination="BYq-Jb-b3b" id="IC7-mk-QSD"/>
+                        <outlet property="imageView" destination="b6J-7B-hr0" id="2xl-Ck-AxB"/>
                         <outlet property="searchDisplayController" destination="yVt-Gf-8IG" id="PAM-2u-8up"/>
                         <segue destination="SZO-Tx-Ohk" kind="push" id="84H-KX-KdK"/>
                     </connections>
@@ -88,12 +89,12 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="yIF-6b-dmu"/>
+                        <segue destination="ldQ-6T-CC6" kind="relationship" relationship="rootViewController" id="1kg-3E-fd9"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u3u-Gw-dRz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2439" y="-469"/>
+            <point key="canvasLocation" x="2369" y="259"/>
         </scene>
         <!--Pic View Controller-->
         <scene sceneID="RRY-W5-y2I">
@@ -199,6 +200,9 @@
                                 <items>
                                     <barButtonItem systemItem="camera" id="VS0-kF-366">
                                         <color key="tintColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <segue destination="vXZ-lx-hvc" kind="push" id="Uac-84-sK0"/>
+                                        </connections>
                                     </barButtonItem>
                                     <barButtonItem systemItem="flexibleSpace" id="rLH-UZ-a4j">
                                         <color key="tintColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
@@ -217,6 +221,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="4jd-lc-vNL"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="paintView" destination="xAD-lp-jqP" id="SvT-3a-sQq"/>
@@ -244,6 +249,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Yb6-xh-8f6"/>
+        <segue reference="Uac-84-sK0"/>
     </inferredMetricsTieBreakers>
 </document>
