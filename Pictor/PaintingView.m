@@ -60,7 +60,7 @@
 
 #define kBrushOpacity		(1.0 / 3.0)
 #define kBrushPixelStep		3.0
-//#define kBrushScale         2.0
+#define kBrushScale			1.0
 
 
 // Shaders
@@ -129,8 +129,6 @@ typedef struct {
     GLuint vboId;
     
     BOOL initialized;
-    
-    CGFloat kBrushScale;
 }
 
 @end
@@ -427,7 +425,7 @@ typedef struct {
 	
 	// Clear the buffer
 	glBindFramebuffer(GL_FRAMEBUFFER, viewFramebuffer);
-	glClearColor(1.0, 1.0, 1.0, 1.0);
+	glClearColor(1.0, 1.0, 1.0, 0.0);
 	glClear(GL_COLOR_BUFFER_BIT);
 	
 	// Display the buffer
@@ -547,7 +545,7 @@ typedef struct {
 // Handles the end of a touch event when the touch is a tap.
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
-	CGRect bounds = [self bounds];
+	CGRect				bounds = [self bounds];
     UITouch*	touch = [[event touchesForView:self] anyObject];
 	if (firstTouch) {
 		firstTouch = NO;
@@ -565,12 +563,6 @@ typedef struct {
 	// This application is not saving state.
 }
 
-- (void)setBrushWidth:(CGFloat)width
-{
-    kBrushScale = width;
-    NSLog(@"W: %f", width);
-}
-
 - (void)setBrushColorWithRed:(CGFloat)red green:(CGFloat)green blue:(CGFloat)blue
 {
 	// Update the brush color
@@ -585,73 +577,6 @@ typedef struct {
         glUseProgram(program[PROGRAM_POINT].id);
         glUniform4fv(program[PROGRAM_POINT].uniform[UNIFORM_VERTEX_COLOR], 1, brushColor);
     }
-}
-
-//Special image export capabilities
-
-void ProviderReleaseData ( void *info, const void *data, size_t size )
-{
-    free((void*)data);
-}
-
--(UIImage*) upsideDownImageRepresenation
-{
-    int imageWidth = CGRectGetWidth([self bounds]);
-    int imageHeight = CGRectGetHeight([self bounds]);
-    
-    //image buffer for export
-    NSInteger myDataLength = imageWidth* imageHeight * 4;
-    
-    // allocate array and read pixels into it.
-    GLubyte *tempImagebuffer = (GLubyte *) malloc(myDataLength);
-    
-    glReadPixels( 0, 0, imageWidth, imageHeight, GL_RGBA, GL_UNSIGNED_BYTE, tempImagebuffer);
-    
-    // make data provider with data.
-    CGDataProviderRef provider = CGDataProviderCreateWithData(NULL, tempImagebuffer, myDataLength, ProviderReleaseData);
-    
-    // prep the ingredients
-    int bitsPerComponent = 8;
-    int bitsPerPixel = 32;
-    int bytesPerRow = 4 * imageWidth;
-    CGColorSpaceRef colorSpaceRef = CGColorSpaceCreateDeviceRGB();
-    CGBitmapInfo bitmapInfo = kCGImageAlphaPremultipliedLast;
-    
-    CGColorRenderingIntent renderingIntent = kCGRenderingIntentDefault;
-    
-    // make the cgimage
-    CGImageRef imageRef = CGImageCreate(imageWidth, imageHeight, bitsPerComponent, bitsPerPixel, bytesPerRow, colorSpaceRef, bitmapInfo, provider, NULL, NO, renderingIntent);
-    
-    // then make the uiimage from that
-    
-    UIImage *myImage =  [UIImage imageWithCGImage:imageRef] ;
-    
-    CGDataProviderRelease(provider);
-    CGImageRelease(imageRef);
-    CGColorSpaceRelease(colorSpaceRef);
-    
-    return myImage;
-}
-
--(UIImage*) imageRepresentation
-{
-    
-    UIImageView* upsideDownImageView=[[UIImageView alloc] initWithImage: [self upsideDownImageRepresenation]];
-    
-    upsideDownImageView.transform=CGAffineTransformScale(upsideDownImageView.transform, 1, -1);
-    
-    UIView* container=[[UIView alloc] initWithFrame:upsideDownImageView.frame];
-    [container addSubview:upsideDownImageView];
-    UIImage* toReturn=nil;
-    
-    UIGraphicsBeginImageContext(container.frame.size);
-    
-    [container.layer renderInContext:UIGraphicsGetCurrentContext()];
-    
-    toReturn = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    
-    return toReturn;
 }
 
 @end

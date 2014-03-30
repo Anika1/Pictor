@@ -33,6 +33,9 @@
 
 @implementation PicViewController
 
+@synthesize imageView;
+
+
 - (IBAction)clearTouched:(id)sender {
     [self eraseView];
 }
@@ -110,18 +113,7 @@
 }
 
 - (IBAction)cameraButtonPressed:(id)sender {
-<<<<<<< HEAD
     
-    
-    //isSourceTypeAvailable: UIImagePickerControllerSourceTypeSavedPhotosAlbum;
-    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
-    picker.delegate = self;
-    picker.allowsEditing = YES;
-    picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
-    
-    [self presentViewController:picker animated:YES completion:NULL];
-    
-=======
     UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"Take Picture", @"Select Photo",nil];
 	actionSheet.actionSheetStyle = UIActionSheetStyleDefault;
 	[actionSheet showInView:self.view];
@@ -150,13 +142,14 @@
         picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
         
         [self presentViewController:picker animated:YES completion:NULL];
+        
 
 	}
 	else
 	{
 	}
 	
->>>>>>> FETCH_HEAD
+
 }
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
@@ -172,8 +165,9 @@
     // editing of images
     UIImage *image = [info objectForKey:UIImagePickerControllerEditedImage];
     
-    if (image == nil)
-        image = [info objectForKey:UIImagePickerControllerOriginalImage];
+    
+    image = [info objectForKey:UIImagePickerControllerOriginalImage];
+    imageView.image = image;
     NSLog(@"Hi");
     // Do something with the image
     
@@ -186,8 +180,5 @@
     
 }
 
-<<<<<<< HEAD
-=======
 
->>>>>>> FETCH_HEAD
 @end
