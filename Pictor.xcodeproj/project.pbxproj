@@ -24,6 +24,7 @@
 		84A3A2D518E7ACFA00409E73 /* XYZPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A3A2D418E7ACFA00409E73 /* XYZPictureViewController.m */; };
 		84A3A2D918E7D2C200409E73 /* point.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 84A3A2D718E7D2C200409E73 /* point.fsh */; };
 		84A3A2DA18E7D2C200409E73 /* point.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 84A3A2D818E7D2C200409E73 /* point.vsh */; };
+		D94F3AB918E7EBB0006C2064 /* Particle.png in Resources */ = {isa = PBXBuildFile; fileRef = D94F3AB818E7EBB0006C2064 /* Particle.png */; };
 		D9F0D9BC18E7B435001BF205 /* Clear.png in Resources */ = {isa = PBXBuildFile; fileRef = D9F0D99B18E7B435001BF205 /* Clear.png */; };
 		D9F0D9BD18E7B435001BF205 /* Black.png in Resources */ = {isa = PBXBuildFile; fileRef = D9F0D99D18E7B435001BF205 /* Black.png */; };
 		D9F0D9BE18E7B435001BF205 /* Blue.png in Resources */ = {isa = PBXBuildFile; fileRef = D9F0D99E18E7B435001BF205 /* Blue.png */; };
@@ -86,6 +87,7 @@
 		84A3A2D418E7ACFA00409E73 /* XYZPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZPictureViewController.m; sourceTree = "<group>"; };
 		84A3A2D718E7D2C200409E73 /* point.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = point.fsh; sourceTree = "<group>"; };
 		84A3A2D818E7D2C200409E73 /* point.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = point.vsh; sourceTree = "<group>"; };
+		D94F3AB818E7EBB0006C2064 /* Particle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Particle.png; sourceTree = "<group>"; };
 		D9F0D99B18E7B435001BF205 /* Clear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Clear.png; sourceTree = "<group>"; };
 		D9F0D99D18E7B435001BF205 /* Black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Black.png; sourceTree = "<group>"; };
 		D9F0D99E18E7B435001BF205 /* Blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Blue.png; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 		84A3A2A218E74AF500409E73 /* Pictor */ = {
 			isa = PBXGroup;
 			children = (
+				D94F3AB818E7EBB0006C2064 /* Particle.png */,
 				D9F0D99A18E7B435001BF205 /* Assets */,
 				D9F0D9B518E7B435001BF205 /* PaintingView.h */,
 				D9F0D9B618E7B435001BF205 /* PaintingView.m */,
@@ -363,6 +366,7 @@
 				D9F0D9C118E7B435001BF205 /* Grey.png in Resources */,
 				D9F0D9C518E7B435001BF205 /* Purple.png in Resources */,
 				84A3A2D918E7D2C200409E73 /* point.fsh in Resources */,
+				D94F3AB918E7EBB0006C2064 /* Particle.png in Resources */,
 				84A3A2B518E74AF500409E73 /* Images.xcassets in Resources */,
 				D9F0D9CE18E7B435001BF205 /* Large.png in Resources */,
 				D9F0D9C318E7B435001BF205 /* Orange.png in Resources */,
