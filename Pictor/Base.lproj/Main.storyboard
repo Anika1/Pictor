@@ -45,7 +45,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="2301" y="-1141"/>
+            <point key="canvasLocation" x="2933" y="-469"/>
         </scene>
         <!--Picture View Controller-->
         <scene sceneID="Tti-L5-GPc">
@@ -76,7 +76,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hn6-81-GPy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2657" y="-1167"/>
+            <point key="canvasLocation" x="3513" y="-455"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wSY-cH-R7r">
@@ -95,7 +95,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u3u-Gw-dRz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1797" y="-1167"/>
+            <point key="canvasLocation" x="2429" y="-495"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

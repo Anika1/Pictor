@@ -22,6 +22,32 @@
 		84A3A2C618E74AF500409E73 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84A3A2C418E74AF500409E73 /* InfoPlist.strings */; };
 		84A3A2C818E74AF500409E73 /* PictorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A3A2C718E74AF500409E73 /* PictorTests.m */; };
 		84A3A2D518E7ACFA00409E73 /* XYZPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A3A2D418E7ACFA00409E73 /* XYZPictureViewController.m */; };
+		D9F0D9BC18E7B435001BF205 /* Clear.png in Resources */ = {isa = PBXBuildFile; fileRef = D9F0D99B18E7B435001BF205 /* Clear.png */; };
+		D9F0D9BD18E7B435001BF205 /* Black.png in Resources */ = {isa = PBXBuildFile; fileRef = D9F0D99D18E7B435001BF205 /* Black.png */; };
+		D9F0D9BE18E7B435001BF205 /* Blue.png in Resources */ = {isa = PBXBuildFile; fileRef = D9F0D99E18E7B435001BF205 /* Blue.png */; };
+		D9F0D9BF18E7B435001BF205 /* Brown.png in Resources */ = {isa = PBXBuildFile; fileRef = D9F0D99F18E7B435001BF205 /* Brown.png */; };
+		D9F0D9C018E7B435001BF205 /* Green.png in Resources */ = {isa = PBXBuildFile; fileRef = D9F0D9A018E7B435001BF205 /* Green.png */; };
+		D9F0D9C118E7B435001BF205 /* Grey.png in Resources */ = {isa = PBXBuildFile; fileRef = D9F0D9A118E7B435001BF205 /* Grey.png */; };
+		D9F0D9C218E7B435001BF205 /* Light Blue.png in Resources */ = {isa = PBXBuildFile; fileRef = D9F0D9A218E7B435001BF205 /* Light Blue.png */; };
+		D9F0D9C318E7B435001BF205 /* Orange.png in Resources */ = {isa = PBXBuildFile; fileRef = D9F0D9A318E7B435001BF205 /* Orange.png */; };
+		D9F0D9C418E7B435001BF205 /* Pink.png in Resources */ = {isa = PBXBuildFile; fileRef = D9F0D9A418E7B435001BF205 /* Pink.png */; };
+		D9F0D9C518E7B435001BF205 /* Purple.png in Resources */ = {isa = PBXBuildFile; fileRef = D9F0D9A518E7B435001BF205 /* Purple.png */; };
+		D9F0D9C618E7B435001BF205 /* Red.png in Resources */ = {isa = PBXBuildFile; fileRef = D9F0D9A618E7B435001BF205 /* Red.png */; };
+		D9F0D9C718E7B435001BF205 /* SelectGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = D9F0D9A718E7B435001BF205 /* SelectGreen.png */; };
+		D9F0D9C818E7B435001BF205 /* SelectLB.png in Resources */ = {isa = PBXBuildFile; fileRef = D9F0D9A818E7B435001BF205 /* SelectLB.png */; };
+		D9F0D9C918E7B435001BF205 /* SelectPurple.png in Resources */ = {isa = PBXBuildFile; fileRef = D9F0D9A918E7B435001BF205 /* SelectPurple.png */; };
+		D9F0D9CA18E7B435001BF205 /* SelectRed.png in Resources */ = {isa = PBXBuildFile; fileRef = D9F0D9AA18E7B435001BF205 /* SelectRed.png */; };
+		D9F0D9CB18E7B435001BF205 /* SelectYellow.png in Resources */ = {isa = PBXBuildFile; fileRef = D9F0D9AB18E7B435001BF205 /* SelectYellow.png */; };
+		D9F0D9CC18E7B435001BF205 /* White.png in Resources */ = {isa = PBXBuildFile; fileRef = D9F0D9AC18E7B435001BF205 /* White.png */; };
+		D9F0D9CD18E7B435001BF205 /* Yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = D9F0D9AD18E7B435001BF205 /* Yellow.png */; };
+		D9F0D9CE18E7B435001BF205 /* Large.png in Resources */ = {isa = PBXBuildFile; fileRef = D9F0D9AE18E7B435001BF205 /* Large.png */; };
+		D9F0D9CF18E7B435001BF205 /* Medium.png in Resources */ = {isa = PBXBuildFile; fileRef = D9F0D9AF18E7B435001BF205 /* Medium.png */; };
+		D9F0D9D018E7B435001BF205 /* Small.png in Resources */ = {isa = PBXBuildFile; fileRef = D9F0D9B118E7B435001BF205 /* Small.png */; };
+		D9F0D9D118E7B435001BF205 /* fileUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F0D9B418E7B435001BF205 /* fileUtil.m */; };
+		D9F0D9D218E7B435001BF205 /* PaintingView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F0D9B618E7B435001BF205 /* PaintingView.m */; };
+		D9F0D9D318E7B435001BF205 /* PicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F0D9B818E7B435001BF205 /* PicViewController.m */; };
+		D9F0D9D418E7B435001BF205 /* Relationship-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = D9F0D9B918E7B435001BF205 /* Relationship-arrow.png */; };
+		D9F0D9D518E7B435001BF205 /* shaderUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = D9F0D9BA18E7B435001BF205 /* shaderUtil.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +82,37 @@
 		84A3A2C718E74AF500409E73 /* PictorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PictorTests.m; sourceTree = "<group>"; };
 		84A3A2D318E7ACFA00409E73 /* XYZPictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZPictureViewController.h; sourceTree = "<group>"; };
 		84A3A2D418E7ACFA00409E73 /* XYZPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZPictureViewController.m; sourceTree = "<group>"; };
+		D9F0D99B18E7B435001BF205 /* Clear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Clear.png; sourceTree = "<group>"; };
+		D9F0D99D18E7B435001BF205 /* Black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Black.png; sourceTree = "<group>"; };
+		D9F0D99E18E7B435001BF205 /* Blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Blue.png; sourceTree = "<group>"; };
+		D9F0D99F18E7B435001BF205 /* Brown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Brown.png; sourceTree = "<group>"; };
+		D9F0D9A018E7B435001BF205 /* Green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Green.png; sourceTree = "<group>"; };
+		D9F0D9A118E7B435001BF205 /* Grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Grey.png; sourceTree = "<group>"; };
+		D9F0D9A218E7B435001BF205 /* Light Blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Light Blue.png"; sourceTree = "<group>"; };
+		D9F0D9A318E7B435001BF205 /* Orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Orange.png; sourceTree = "<group>"; };
+		D9F0D9A418E7B435001BF205 /* Pink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pink.png; sourceTree = "<group>"; };
+		D9F0D9A518E7B435001BF205 /* Purple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Purple.png; sourceTree = "<group>"; };
+		D9F0D9A618E7B435001BF205 /* Red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Red.png; sourceTree = "<group>"; };
+		D9F0D9A718E7B435001BF205 /* SelectGreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SelectGreen.png; sourceTree = "<group>"; };
+		D9F0D9A818E7B435001BF205 /* SelectLB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SelectLB.png; sourceTree = "<group>"; };
+		D9F0D9A918E7B435001BF205 /* SelectPurple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SelectPurple.png; sourceTree = "<group>"; };
+		D9F0D9AA18E7B435001BF205 /* SelectRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SelectRed.png; sourceTree = "<group>"; };
+		D9F0D9AB18E7B435001BF205 /* SelectYellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SelectYellow.png; sourceTree = "<group>"; };
+		D9F0D9AC18E7B435001BF205 /* White.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = White.png; sourceTree = "<group>"; };
+		D9F0D9AD18E7B435001BF205 /* Yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Yellow.png; sourceTree = "<group>"; };
+		D9F0D9AE18E7B435001BF205 /* Large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Large.png; sourceTree = "<group>"; };
+		D9F0D9AF18E7B435001BF205 /* Medium.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Medium.png; sourceTree = "<group>"; };
+		D9F0D9B118E7B435001BF205 /* Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Small.png; sourceTree = "<group>"; };
+		D9F0D9B218E7B435001BF205 /* debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = debug.h; sourceTree = "<group>"; };
+		D9F0D9B318E7B435001BF205 /* fileUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fileUtil.h; sourceTree = "<group>"; };
+		D9F0D9B418E7B435001BF205 /* fileUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fileUtil.m; sourceTree = "<group>"; };
+		D9F0D9B518E7B435001BF205 /* PaintingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaintingView.h; sourceTree = "<group>"; };
+		D9F0D9B618E7B435001BF205 /* PaintingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaintingView.m; sourceTree = "<group>"; };
+		D9F0D9B718E7B435001BF205 /* PicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicViewController.h; sourceTree = "<group>"; };
+		D9F0D9B818E7B435001BF205 /* PicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicViewController.m; sourceTree = "<group>"; };
+		D9F0D9B918E7B435001BF205 /* Relationship-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Relationship-arrow.png"; sourceTree = "<group>"; };
+		D9F0D9BA18E7B435001BF205 /* shaderUtil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = shaderUtil.c; sourceTree = "<group>"; };
+		D9F0D9BB18E7B435001BF205 /* shaderUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shaderUtil.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +172,17 @@
 		84A3A2A218E74AF500409E73 /* Pictor */ = {
 			isa = PBXGroup;
 			children = (
+				D9F0D99A18E7B435001BF205 /* Assets */,
+				D9F0D9B218E7B435001BF205 /* debug.h */,
+				D9F0D9B318E7B435001BF205 /* fileUtil.h */,
+				D9F0D9B418E7B435001BF205 /* fileUtil.m */,
+				D9F0D9B518E7B435001BF205 /* PaintingView.h */,
+				D9F0D9B618E7B435001BF205 /* PaintingView.m */,
+				D9F0D9B718E7B435001BF205 /* PicViewController.h */,
+				D9F0D9B818E7B435001BF205 /* PicViewController.m */,
+				D9F0D9B918E7B435001BF205 /* Relationship-arrow.png */,
+				D9F0D9BA18E7B435001BF205 /* shaderUtil.c */,
+				D9F0D9BB18E7B435001BF205 /* shaderUtil.h */,
 				84A3A2AB18E74AF500409E73 /* XYZAppDelegate.h */,
 				84A3A2AC18E74AF500409E73 /* XYZAppDelegate.m */,
 				84A3A2AE18E74AF500409E73 /* Main.storyboard */,
@@ -155,6 +223,50 @@
 				84A3A2C418E74AF500409E73 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D9F0D99A18E7B435001BF205 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				D9F0D99B18E7B435001BF205 /* Clear.png */,
+				D9F0D99C18E7B435001BF205 /* Colors */,
+				D9F0D9AE18E7B435001BF205 /* Large.png */,
+				D9F0D9AF18E7B435001BF205 /* Medium.png */,
+				D9F0D9B018E7B435001BF205 /* Sizes */,
+				D9F0D9B118E7B435001BF205 /* Small.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		D9F0D99C18E7B435001BF205 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				D9F0D99D18E7B435001BF205 /* Black.png */,
+				D9F0D99E18E7B435001BF205 /* Blue.png */,
+				D9F0D99F18E7B435001BF205 /* Brown.png */,
+				D9F0D9A018E7B435001BF205 /* Green.png */,
+				D9F0D9A118E7B435001BF205 /* Grey.png */,
+				D9F0D9A218E7B435001BF205 /* Light Blue.png */,
+				D9F0D9A318E7B435001BF205 /* Orange.png */,
+				D9F0D9A418E7B435001BF205 /* Pink.png */,
+				D9F0D9A518E7B435001BF205 /* Purple.png */,
+				D9F0D9A618E7B435001BF205 /* Red.png */,
+				D9F0D9A718E7B435001BF205 /* SelectGreen.png */,
+				D9F0D9A818E7B435001BF205 /* SelectLB.png */,
+				D9F0D9A918E7B435001BF205 /* SelectPurple.png */,
+				D9F0D9AA18E7B435001BF205 /* SelectRed.png */,
+				D9F0D9AB18E7B435001BF205 /* SelectYellow.png */,
+				D9F0D9AC18E7B435001BF205 /* White.png */,
+				D9F0D9AD18E7B435001BF205 /* Yellow.png */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		D9F0D9B018E7B435001BF205 /* Sizes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sizes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,9 +345,31 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9F0D9C118E7B435001BF205 /* Grey.png in Resources */,
+				D9F0D9C518E7B435001BF205 /* Purple.png in Resources */,
 				84A3A2B518E74AF500409E73 /* Images.xcassets in Resources */,
+				D9F0D9CE18E7B435001BF205 /* Large.png in Resources */,
+				D9F0D9C318E7B435001BF205 /* Orange.png in Resources */,
+				D9F0D9D018E7B435001BF205 /* Small.png in Resources */,
+				D9F0D9BD18E7B435001BF205 /* Black.png in Resources */,
+				D9F0D9D418E7B435001BF205 /* Relationship-arrow.png in Resources */,
+				D9F0D9C918E7B435001BF205 /* SelectPurple.png in Resources */,
 				84A3A2A718E74AF500409E73 /* InfoPlist.strings in Resources */,
+				D9F0D9BE18E7B435001BF205 /* Blue.png in Resources */,
+				D9F0D9C218E7B435001BF205 /* Light Blue.png in Resources */,
+				D9F0D9BF18E7B435001BF205 /* Brown.png in Resources */,
+				D9F0D9C018E7B435001BF205 /* Green.png in Resources */,
+				D9F0D9CB18E7B435001BF205 /* SelectYellow.png in Resources */,
+				D9F0D9C718E7B435001BF205 /* SelectGreen.png in Resources */,
+				D9F0D9C418E7B435001BF205 /* Pink.png in Resources */,
 				84A3A2B018E74AF500409E73 /* Main.storyboard in Resources */,
+				D9F0D9C818E7B435001BF205 /* SelectLB.png in Resources */,
+				D9F0D9BC18E7B435001BF205 /* Clear.png in Resources */,
+				D9F0D9CD18E7B435001BF205 /* Yellow.png in Resources */,
+				D9F0D9CC18E7B435001BF205 /* White.png in Resources */,
+				D9F0D9C618E7B435001BF205 /* Red.png in Resources */,
+				D9F0D9CA18E7B435001BF205 /* SelectRed.png in Resources */,
+				D9F0D9CF18E7B435001BF205 /* Medium.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +390,10 @@
 			files = (
 				84A3A2B318E74AF500409E73 /* XYZViewController.m in Sources */,
 				84A3A2AD18E74AF500409E73 /* XYZAppDelegate.m in Sources */,
+				D9F0D9D518E7B435001BF205 /* shaderUtil.c in Sources */,
+				D9F0D9D218E7B435001BF205 /* PaintingView.m in Sources */,
+				D9F0D9D118E7B435001BF205 /* fileUtil.m in Sources */,
+				D9F0D9D318E7B435001BF205 /* PicViewController.m in Sources */,
 				84A3A2A918E74AF500409E73 /* main.m in Sources */,
 				84A3A2D518E7ACFA00409E73 /* XYZPictureViewController.m in Sources */,
 			);
@@ -462,6 +600,7 @@
 				84A3A2CD18E74AF500409E73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84A3A2CE18E74AF500409E73 /* Build configuration list for PBXNativeTarget "PictorTests" */ = {
 			isa = XCConfigurationList;
@@ -470,6 +609,7 @@
 				84A3A2D018E74AF500409E73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
