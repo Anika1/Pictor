@@ -460,7 +460,11 @@ typedef struct {
 	
 	// Add points to the buffer so there are drawing points every X pixels
 	count = MAX(ceilf(sqrtf((end.x - start.x) * (end.x - start.x) + (end.y - start.y) * (end.y - start.y)) / kBrushPixelStep), 1);
+<<<<<<< HEAD
 
+=======
+	
+>>>>>>> FETCH_HEAD
     for(i = 0; i < count; ++i) {
         
 		if(vertexCount == vertexMax) {

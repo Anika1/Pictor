@@ -110,6 +110,7 @@
 }
 
 - (IBAction)cameraButtonPressed:(id)sender {
+<<<<<<< HEAD
     
     
     //isSourceTypeAvailable: UIImagePickerControllerSourceTypeSavedPhotosAlbum;
@@ -120,6 +121,7 @@
     
     [self presentViewController:picker animated:YES completion:NULL];
     
+=======
     UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"Take Picture", @"Select Photo",nil];
 	actionSheet.actionSheetStyle = UIActionSheetStyleDefault;
 	[actionSheet showInView:self.view];
@@ -154,6 +156,7 @@
 	{
 	}
 	
+>>>>>>> FETCH_HEAD
 }
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
@@ -183,4 +186,8 @@
     
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> FETCH_HEAD
 @end
