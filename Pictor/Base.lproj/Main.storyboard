@@ -194,10 +194,14 @@
                                     <action selector="clearTouched:" destination="ldQ-6T-CC6" eventType="touchUpInside" id="ZGQ-7L-gRo"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="BwI-J3-O7z">
+                                <rect key="frame" x="8" y="86" width="292" height="300"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
                             <view contentMode="scaleToFill" id="xAD-lp-jqP" customClass="PaintingView">
-                                <rect key="frame" x="20" y="90" width="280" height="280"/>
+                                <rect key="frame" x="18" y="95" width="272" height="280"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -221,6 +225,7 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="CameraButton" destination="5q0-oG-L1s" id="4kq-rw-YYc"/>
+                        <outlet property="imageView" destination="BwI-J3-O7z" id="6dR-74-ekE"/>
                         <outlet property="paintView" destination="xAD-lp-jqP" id="SvT-3a-sQq"/>
                     </connections>
                 </viewController>

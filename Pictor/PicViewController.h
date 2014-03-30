@@ -10,6 +10,7 @@
 
 @interface PicViewController : UIViewController <UIActionSheetDelegate>
 @property (weak, nonatomic) IBOutlet UIToolbar *shareButton;
+@property (nonatomic, retain) IBOutlet UIImageView *imageView;
 - (IBAction)shareButtonPressed:(id)sender;
 
 @end

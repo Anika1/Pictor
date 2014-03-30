@@ -425,7 +425,7 @@ typedef struct {
 	
 	// Clear the buffer
 	glBindFramebuffer(GL_FRAMEBUFFER, viewFramebuffer);
-	glClearColor(1.0, 1.0, 1.0, 1.0);
+	glClearColor(1.0, 1.0, 1.0, 0.0);
 	glClear(GL_COLOR_BUFFER_BIT);
 	
 	// Display the buffer

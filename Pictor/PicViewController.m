@@ -32,7 +32,7 @@
 @end
 
 @implementation PicViewController
-
+@synthesize imageView;
 - (IBAction)redTouched:(id)sender {
     [self changeBrushColorWithRed: 255/255.0f Green:63/255.0f Blue:46/255.0f];
     NSLog(@"Red");
@@ -134,6 +134,7 @@
         picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
         
         [self presentViewController:picker animated:YES completion:NULL];
+        
 
 	}
 	else
@@ -155,8 +156,9 @@
     // editing of images
     UIImage *image = [info objectForKey:UIImagePickerControllerEditedImage];
     
-    if (image == nil)
-        image = [info objectForKey:UIImagePickerControllerOriginalImage];
+    
+    image = [info objectForKey:UIImagePickerControllerOriginalImage];
+    imageView.image = image;
     NSLog(@"Hi");
     // Do something with the image
     
