@@ -7,18 +7,28 @@
 //
 
 #import "XYZViewController.h"
-
+#import <Parse/Parse.h>
+#import "PicSelectViewController.h"
 @interface XYZViewController ()
 
 @end
 
 @implementation XYZViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad{
+
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
 }
+- (void) viewDidAppear:(BOOL)animated {
+    PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
+    testObject[@"foo"] = @"bar";
+    [testObject saveInBackground];
+    PicSelectViewController *xyz = [[PicSelectViewController alloc] initWithNibName:@"PicSelectViewController" bundle:nil];
+    [self presentViewController:xyz animated:NO completion:NULL];
+    
+}
+
+// Do any additional setup after loading the view, typically from a nib.
 
 - (void)didReceiveMemoryWarning
 {
