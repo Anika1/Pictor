@@ -29,6 +29,12 @@
 
 @property (weak, nonatomic) IBOutlet PaintingView *paintView;
 
+@property (weak, nonatomic) IBOutlet UIButton *redB;
+@property (weak, nonatomic) IBOutlet UIButton *greenB;
+@property (weak, nonatomic) IBOutlet UIButton *yellowB;
+@property (weak, nonatomic) IBOutlet UIButton *blueB;
+@property (weak, nonatomic) IBOutlet UIButton *purpleB;
+
 @end
 
 @implementation PicViewController
@@ -66,15 +72,18 @@
 }
 
 - (IBAction)smallTouched:(id)sender {
-    // [self.paintView setBrushWidth:0.33];
+    self.paintView.kBrushScale = 4.0;
+    [self.paintView changeSize];
 }
 
 - (IBAction)mediumTouched:(id)sender {
-    //   [self.paintView setBrushWidth:0.66];
+    self.paintView.kBrushScale = 2.0;
+    [self.paintView changeSize];
 }
 
 - (IBAction)largeTouched:(id)sender {
-    //  [self.paintView setBrushWidth:1.0];
+    self.paintView.kBrushScale = 1.0;
+    [self.paintView changeSize];
 }
 
 - (IBAction)shareTouched:(id)sender {

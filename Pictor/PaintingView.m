@@ -60,7 +60,9 @@
 
 #define kBrushOpacity		(1.0 / 3.0)
 #define kBrushPixelStep		3.0
-#define kBrushScale			1.0
+//#define kBrushScale			1.0
+
+#define ARC4RANDOM_MAX 0x100000000
 
 
 // Shaders
@@ -139,6 +141,7 @@ typedef struct {
 
 @synthesize  location;
 @synthesize  previousLocation;
+@synthesize  kBrushScale;
 
 // Implement this to override the default layer class (which is [CALayer class]).
 // We do this so that our view will be backed by a layer that is capable of OpenGL ES rendering.
@@ -157,7 +160,7 @@ typedef struct {
 		// In this application, we want to retain the EAGLDrawable contents after a call to presentRenderbuffer.
 		eaglLayer.drawableProperties = [NSDictionary dictionaryWithObjectsAndKeys:
 										[NSNumber numberWithBool:YES], kEAGLDrawablePropertyRetainedBacking, kEAGLColorFormatRGBA8, kEAGLDrawablePropertyColorFormat, nil];
-		
+		kBrushScale = 4.0;
 		context = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
 		
 		if (!context || ![EAGLContext setCurrentContext:context]) {
@@ -243,6 +246,7 @@ typedef struct {
             
             glUniformMatrix4fv(program[PROGRAM_POINT].uniform[UNIFORM_MVP], 1, GL_FALSE, MVPMatrix.m);
         
+            NSLog(@"BrushScale: %f", kBrushScale);
             // point size
             glUniform1f(program[PROGRAM_POINT].uniform[UNIFORM_POINT_SIZE], brushTexture.width / kBrushScale);
             
@@ -252,6 +256,10 @@ typedef struct {
 	}
     
     glError();
+}
+
+- (void)changeSize{
+    glUniform1f(program[PROGRAM_POINT].uniform[UNIFORM_POINT_SIZE], brushTexture.width / kBrushScale);
 }
 
 // Create a texture from an image

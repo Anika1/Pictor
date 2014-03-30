@@ -58,12 +58,14 @@
 
 @property(nonatomic, readwrite) CGPoint location;
 @property(nonatomic, readwrite) CGPoint previousLocation;
+@property(nonatomic, readwrite) CGFloat kBrushScale;
 
 - (void)erase;
 - (void)setBrushColorWithRed:(CGFloat)red green:(CGFloat)green blue:(CGFloat)blue;
 -(void) setImage:(UIImage*)newImage;
 -(void) mergeWithImage:(UIImage*) image;
 -(UIImage*) imageRepresentation;
+- (void)changeSize;
 //- (void)setBrushWidth:(CGFloat)width;
 
 @end

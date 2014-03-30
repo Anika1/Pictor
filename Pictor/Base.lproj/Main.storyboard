@@ -96,7 +96,7 @@
             </objects>
             <point key="canvasLocation" x="2369" y="259"/>
         </scene>
-        <!--Pic View Controller-->
+        <!--Pic View Controller - p i c t o r-->
         <scene sceneID="RRY-W5-y2I">
             <objects>
                 <viewController id="ldQ-6T-CC6" customClass="PicViewController" sceneMemberID="viewController">
@@ -110,6 +110,8 @@
                                 <state key="normal" title="Red" image="Red.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="selected" image="SelectRed.png"/>
+                                <state key="highlighted" image="SelectRed.png"/>
                                 <connections>
                                     <action selector="redTouched:" destination="ldQ-6T-CC6" eventType="touchUpInside" id="u5g-ME-myd"/>
                                 </connections>
@@ -120,6 +122,8 @@
                                 <state key="normal" title="Green" image="Green.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="selected" image="SelectGreen.png"/>
+                                <state key="highlighted" image="SelectGreen.png"/>
                                 <connections>
                                     <action selector="greenTouched:" destination="ldQ-6T-CC6" eventType="touchUpInside" id="S56-ec-kTo"/>
                                 </connections>
@@ -130,6 +134,8 @@
                                 <state key="normal" title="Yellow" image="Yellow.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="selected" image="SelectYellow.png"/>
+                                <state key="highlighted" image="SelectYellow.png"/>
                                 <connections>
                                     <action selector="yellowTouched:" destination="ldQ-6T-CC6" eventType="touchUpInside" id="26C-Pr-YqF"/>
                                 </connections>
@@ -140,6 +146,8 @@
                                 <state key="normal" title="Blue" image="Light Blue.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="selected" image="SelectLB.png"/>
+                                <state key="highlighted" image="SelectLB.png"/>
                                 <connections>
                                     <action selector="blueTouched:" destination="ldQ-6T-CC6" eventType="touchUpInside" id="yS3-Xj-f93"/>
                                 </connections>
@@ -150,6 +158,8 @@
                                 <state key="normal" title="Purple" image="Purple.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="selected" image="SelectPurple.png"/>
+                                <state key="highlighted" image="SelectPurple.png"/>
                                 <connections>
                                     <action selector="purpleTouched:" destination="ldQ-6T-CC6" eventType="touchUpInside" id="gXg-fJ-esB"/>
                                 </connections>
@@ -211,14 +221,14 @@
                             <color key="tintColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                         </barButtonItem>
                     </toolbarItems>
-                    <navigationItem key="navigationItem" id="x41-d8-CUt">
+                    <navigationItem key="navigationItem" title="p i c t o r" id="x41-d8-CUt">
                         <barButtonItem key="leftBarButtonItem" systemItem="camera" id="5q0-oG-L1s">
                             <connections>
                                 <action selector="cameraButtonPressed:" destination="ldQ-6T-CC6" id="Nt9-CH-ihF"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="action" id="v5F-Ba-eub">
-                            <color key="tintColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="shareTouched:" destination="ldQ-6T-CC6" id="X9u-PZ-q8l"/>
                             </connections>
@@ -228,8 +238,13 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="CameraButton" destination="5q0-oG-L1s" id="4kq-rw-YYc"/>
+                        <outlet property="blueB" destination="DwQ-c9-h8x" id="9J7-bc-gmf"/>
+                        <outlet property="greenB" destination="GuJ-Ca-M0W" id="j5P-0q-Gfc"/>
                         <outlet property="imageView" destination="BwI-J3-O7z" id="6dR-74-ekE"/>
                         <outlet property="paintView" destination="xAD-lp-jqP" id="SvT-3a-sQq"/>
+                        <outlet property="purpleB" destination="tP5-Iu-UqN" id="xus-QJ-Vov"/>
+                        <outlet property="redB" destination="PQT-Po-03g" id="Jb7-fa-R6O"/>
+                        <outlet property="yellowB" destination="0j7-ai-3XP" id="rgn-1p-BgT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fks-WS-bqb" sceneMemberID="firstResponder"/>
@@ -245,6 +260,11 @@
         <image name="Medium.png" width="160" height="160"/>
         <image name="Purple.png" width="60" height="120"/>
         <image name="Red.png" width="60" height="120"/>
+        <image name="SelectGreen.png" width="60" height="120"/>
+        <image name="SelectLB.png" width="60" height="120"/>
+        <image name="SelectPurple.png" width="60" height="120"/>
+        <image name="SelectRed.png" width="60" height="120"/>
+        <image name="SelectYellow.png" width="60" height="120"/>
         <image name="Small.png" width="160" height="160"/>
         <image name="Yellow.png" width="60" height="120"/>
     </resources>
