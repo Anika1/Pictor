@@ -459,6 +459,7 @@ typedef struct {
 	// Add points to the buffer so there are drawing points every X pixels
 	count = MAX(ceilf(sqrtf((end.x - start.x) * (end.x - start.x) + (end.y - start.y) * (end.y - start.y)) / kBrushPixelStep), 1);
 	for(i = 0; i < count; ++i) {
+        kBrushOpacity = 
 		if(vertexCount == vertexMax) {
 			vertexMax = 2 * vertexMax;
 			vertexBuffer = realloc(vertexBuffer, vertexMax * 2 * sizeof(GLfloat));
@@ -490,7 +491,7 @@ typedef struct {
 // Reads previously recorded points and draws them onscreen. This is the Shake Me message that appears when the application launches.
 - (void)playback:(NSMutableArray*)recordedPaths
 {
-	NSData*				data = [recordedPaths objectAtIndex:0];
+	/*NSData*				data = [recordedPaths objectAtIndex:0];
 	CGPoint*			point = (CGPoint*)[data bytes];
 	NSUInteger			count = [data length] / sizeof(CGPoint),
 						i;
@@ -502,7 +503,7 @@ typedef struct {
 	// Render the next path after a short delay 
 	[recordedPaths removeObjectAtIndex:0];
 	if([recordedPaths count])
-		[self performSelector:@selector(playback:) withObject:recordedPaths afterDelay:0.01];
+		[self performSelector:@selector(playback:) withObject:recordedPaths afterDelay:0.01];*/
 }
 
 
