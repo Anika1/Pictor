@@ -161,7 +161,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="smallTouched:" destination="ldQ-6T-CC6" eventType="touchUpInside" id="COe-EU-Mtf"/>
+                                    <action selector="smallTouched:" destination="ldQ-6T-CC6" eventType="touchUpInside" id="28Z-ca-nic"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="yuF-YY-UQG">
@@ -171,7 +171,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="mediumTouched:" destination="ldQ-6T-CC6" eventType="touchUpInside" id="dYw-yv-FqF"/>
+                                    <action selector="mediumTouched:" destination="ldQ-6T-CC6" eventType="touchUpInside" id="X91-QJ-RSv"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="B0e-k1-vnt">
@@ -181,7 +181,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="largeTouched:" destination="ldQ-6T-CC6" eventType="touchUpInside" id="xUb-Gc-Iyb"/>
+                                    <action selector="largeTouched:" destination="ldQ-6T-CC6" eventType="touchUpInside" id="xB0-rB-OOt"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4Nb-Ji-YEH">
@@ -191,7 +191,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="clearTouched:" destination="ldQ-6T-CC6" eventType="touchUpInside" id="AGL-sf-0Vy"/>
+                                    <action selector="clearTouched:" destination="ldQ-6T-CC6" eventType="touchUpInside" id="ZGQ-7L-gRo"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="BwI-J3-O7z">
