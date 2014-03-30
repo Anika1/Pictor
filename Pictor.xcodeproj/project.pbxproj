@@ -50,6 +50,17 @@
 		D9F0D9D218E7B435001BF205 /* PaintingView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F0D9B618E7B435001BF205 /* PaintingView.m */; };
 		D9F0D9D318E7B435001BF205 /* PicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F0D9B818E7B435001BF205 /* PicViewController.m */; };
 		D9F0D9D518E7B435001BF205 /* shaderUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = D9F0D9BA18E7B435001BF205 /* shaderUtil.c */; };
+		E231CC5B18E7F01400CDC31E /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E231CC5A18E7F01400CDC31E /* Parse.framework */; };
+		E231CC5D18E7F04500CDC31E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E231CC5C18E7F04500CDC31E /* AudioToolbox.framework */; };
+		E231CC5F18E7F04A00CDC31E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E231CC5E18E7F04A00CDC31E /* CFNetwork.framework */; };
+		E231CC6118E7F05800CDC31E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E231CC6018E7F05800CDC31E /* CoreLocation.framework */; };
+		E231CC6318E7F05E00CDC31E /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E231CC6218E7F05E00CDC31E /* libz.dylib */; };
+		E231CC6518E7F06600CDC31E /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E231CC6418E7F06600CDC31E /* MobileCoreServices.framework */; };
+		E231CC6718E7F06B00CDC31E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E231CC6618E7F06B00CDC31E /* QuartzCore.framework */; };
+		E231CC6918E7F07000CDC31E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E231CC6818E7F07000CDC31E /* Security.framework */; };
+		E231CC6B18E7F07500CDC31E /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E231CC6A18E7F07500CDC31E /* StoreKit.framework */; };
+		E231CC6D18E7F07E00CDC31E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E231CC6C18E7F07E00CDC31E /* SystemConfiguration.framework */; };
+		E231CC7018E7F4DE00CDC31E /* PicSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E231CC6F18E7F4DE00CDC31E /* PicSelectViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +128,18 @@
 		D9F0D9B818E7B435001BF205 /* PicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicViewController.m; sourceTree = "<group>"; };
 		D9F0D9BA18E7B435001BF205 /* shaderUtil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = shaderUtil.c; sourceTree = "<group>"; };
 		D9F0D9BB18E7B435001BF205 /* shaderUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shaderUtil.h; sourceTree = "<group>"; };
+		E231CC5A18E7F01400CDC31E /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ../../Downloads/Parse.framework; sourceTree = "<group>"; };
+		E231CC5C18E7F04500CDC31E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		E231CC5E18E7F04A00CDC31E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		E231CC6018E7F05800CDC31E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		E231CC6218E7F05E00CDC31E /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		E231CC6418E7F06600CDC31E /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		E231CC6618E7F06B00CDC31E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E231CC6818E7F07000CDC31E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		E231CC6A18E7F07500CDC31E /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		E231CC6C18E7F07E00CDC31E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		E231CC6E18E7F4DE00CDC31E /* PicSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicSelectViewController.h; sourceTree = "<group>"; };
+		E231CC6F18E7F4DE00CDC31E /* PicSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicSelectViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,8 +147,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E231CC6D18E7F07E00CDC31E /* SystemConfiguration.framework in Frameworks */,
+				E231CC6B18E7F07500CDC31E /* StoreKit.framework in Frameworks */,
+				E231CC6918E7F07000CDC31E /* Security.framework in Frameworks */,
+				E231CC6718E7F06B00CDC31E /* QuartzCore.framework in Frameworks */,
+				E231CC6518E7F06600CDC31E /* MobileCoreServices.framework in Frameworks */,
+				E231CC6318E7F05E00CDC31E /* libz.dylib in Frameworks */,
+				E231CC6118E7F05800CDC31E /* CoreLocation.framework in Frameworks */,
 				84A3A29F18E74AF500409E73 /* CoreGraphics.framework in Frameworks */,
+				E231CC5F18E7F04A00CDC31E /* CFNetwork.framework in Frameworks */,
+				E231CC5D18E7F04500CDC31E /* AudioToolbox.framework in Frameworks */,
 				84A3A2A118E74AF500409E73 /* UIKit.framework in Frameworks */,
+				E231CC5B18E7F01400CDC31E /* Parse.framework in Frameworks */,
 				84A3A29D18E74AF500409E73 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -165,6 +198,16 @@
 		84A3A29B18E74AF500409E73 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E231CC6C18E7F07E00CDC31E /* SystemConfiguration.framework */,
+				E231CC6A18E7F07500CDC31E /* StoreKit.framework */,
+				E231CC6818E7F07000CDC31E /* Security.framework */,
+				E231CC6618E7F06B00CDC31E /* QuartzCore.framework */,
+				E231CC6418E7F06600CDC31E /* MobileCoreServices.framework */,
+				E231CC6218E7F05E00CDC31E /* libz.dylib */,
+				E231CC6018E7F05800CDC31E /* CoreLocation.framework */,
+				E231CC5E18E7F04A00CDC31E /* CFNetwork.framework */,
+				E231CC5C18E7F04500CDC31E /* AudioToolbox.framework */,
+				E231CC5A18E7F01400CDC31E /* Parse.framework */,
 				84A3A29C18E74AF500409E73 /* Foundation.framework */,
 				84A3A29E18E74AF500409E73 /* CoreGraphics.framework */,
 				84A3A2A018E74AF500409E73 /* UIKit.framework */,
@@ -185,6 +228,8 @@
 				84A3A2AB18E74AF500409E73 /* XYZAppDelegate.h */,
 				84A3A2AC18E74AF500409E73 /* XYZAppDelegate.m */,
 				84A3A2AE18E74AF500409E73 /* Main.storyboard */,
+				E231CC6E18E7F4DE00CDC31E /* PicSelectViewController.h */,
+				E231CC6F18E7F4DE00CDC31E /* PicSelectViewController.m */,
 				84A3A2D318E7ACFA00409E73 /* XYZPictureViewController.h */,
 				84A3A2D418E7ACFA00409E73 /* XYZPictureViewController.m */,
 				84A3A2B118E74AF500409E73 /* XYZViewController.h */,
@@ -412,6 +457,7 @@
 				D9F0D9D118E7B435001BF205 /* fileUtil.m in Sources */,
 				D9F0D9D318E7B435001BF205 /* PicViewController.m in Sources */,
 				84A3A2A918E74AF500409E73 /* main.m in Sources */,
+				E231CC7018E7F4DE00CDC31E /* PicSelectViewController.m in Sources */,
 				84A3A2D518E7ACFA00409E73 /* XYZPictureViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -537,6 +583,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Sweetie/Downloads,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Pictor/Pictor-Prefix.pch";
 				INFOPLIST_FILE = "Pictor/Pictor-Info.plist";
@@ -550,6 +600,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Sweetie/Downloads,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Pictor/Pictor-Prefix.pch";
 				INFOPLIST_FILE = "Pictor/Pictor-Info.plist";
