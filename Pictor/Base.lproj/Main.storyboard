@@ -205,6 +205,9 @@
                                     </barButtonItem>
                                     <barButtonItem systemItem="action" id="v5F-Ba-eub">
                                         <color key="tintColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="shareButtonPressed:" destination="ldQ-6T-CC6" id="ZCm-H1-fOt"/>
+                                        </connections>
                                     </barButtonItem>
                                 </items>
                             </toolbar>
@@ -220,6 +223,7 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="paintView" destination="xAD-lp-jqP" id="SvT-3a-sQq"/>
+                        <outlet property="shareButton" destination="LWd-X5-32e" id="lac-km-Hds"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fks-WS-bqb" sceneMemberID="firstResponder"/>

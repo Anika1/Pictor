@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface PicViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIToolbar *shareButton;
+- (IBAction)shareButtonPressed:(id)sender;
 
 @end
