@@ -8,9 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
-@interface XYZViewController : UIViewController
+@interface XYZViewController : UIViewController<UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+
 @property (weak, nonatomic) IBOutlet UIToolbar *cameraButton;
-- (IBAction)cameraButtonPressed:(id)sender;
+
 @property (weak, nonatomic) IBOutlet UIImageView *Photo;
+
+- (IBAction)cameraButtonPressed:(id)sender;
+@property (strong, nonatomic) IBOutlet UIImageView *imageView;
+
+- (IBAction)takePhoto:  (UIButton *)sender;
+- (IBAction)selectPhoto:(UIButton *)sender;
+
+
 
 @end

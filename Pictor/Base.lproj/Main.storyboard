@@ -23,9 +23,9 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="k0j-J4-VdY">
-                                <rect key="frame" x="20" y="136" width="280" height="314"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="b6J-7B-hr0">
+                                <rect key="frame" x="17" y="114" width="286" height="365"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -34,6 +34,7 @@
                     <navigationItem key="navigationItem" id="l3m-1G-Ja1"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="Photo" destination="b6J-7B-hr0" id="4YR-Ub-e1Q"/>
                         <outlet property="cameraButton" destination="BYq-Jb-b3b" id="IC7-mk-QSD"/>
                         <outlet property="searchDisplayController" destination="yVt-Gf-8IG" id="PAM-2u-8up"/>
                         <segue destination="SZO-Tx-Ohk" kind="push" id="84H-KX-KdK"/>
@@ -68,7 +69,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="Xgc-Xx-jSI"/>
                     <connections>
-                        <outlet property="DrawingBoard" destination="k0j-J4-VdY" id="feg-qY-kOO"/>
                         <segue destination="vXZ-lx-hvc" kind="push" id="Yb6-xh-8f6"/>
                     </connections>
                 </viewController>
