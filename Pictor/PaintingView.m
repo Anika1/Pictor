@@ -59,8 +59,8 @@
 //CONSTANTS:
 
 #define kBrushOpacity		(1.0 / 3.0)
-#define kBrushPixelStep		0.01
-#define kBrushScale			.005
+#define kBrushPixelStep		3.0
+#define kBrushScale			2.0
 
 
 // Shaders
@@ -425,7 +425,7 @@ typedef struct {
 	
 	// Clear the buffer
 	glBindFramebuffer(GL_FRAMEBUFFER, viewFramebuffer);
-	glClearColor(1.0, 1.0, 1.0, 1.0);
+	glClearColor(0.0, 0.0, 0.0, 0.0);
 	glClear(GL_COLOR_BUFFER_BIT);
 	
 	// Display the buffer

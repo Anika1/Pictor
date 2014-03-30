@@ -146,7 +146,6 @@
 		84A3A29018E74AF500409E73 = {
 			isa = PBXGroup;
 			children = (
-				84A3A2D618E7D2C200409E73 /* Shaders */,
 				84A3A2A218E74AF500409E73 /* Pictor */,
 				84A3A2C118E74AF500409E73 /* PictorTests */,
 				84A3A29B18E74AF500409E73 /* Frameworks */,
@@ -191,6 +190,7 @@
 				84A3A2B118E74AF500409E73 /* XYZViewController.h */,
 				84A3A2B218E74AF500409E73 /* XYZViewController.m */,
 				84A3A2B418E74AF500409E73 /* Images.xcassets */,
+				84A3A2D618E7D2C200409E73 /* Shaders */,
 				84A3A2A318E74AF500409E73 /* Supporting Files */,
 			);
 			path = Pictor;
@@ -236,7 +236,8 @@
 				84A3A2D718E7D2C200409E73 /* point.fsh */,
 				84A3A2D818E7D2C200409E73 /* point.vsh */,
 			);
-			path = Shaders;
+			name = Shaders;
+			path = ../Shaders;
 			sourceTree = "<group>";
 		};
 		D9F0D99A18E7B435001BF205 /* Assets */ = {
