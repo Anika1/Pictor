@@ -32,27 +32,26 @@
 @implementation PicViewController
 
 - (IBAction)redTouched:(id)sender {
-    [self changeBrushColor:[UIColor colorWithRed:255/255.0f green:63/255.0f blue:46/255.0f alpha:1.0f]];
+    [self changeBrushColorWithRed: 255/255.0f Green:63/255.0f Blue:46/255.0f];
     NSLog(@"Red");
 }
 
 - (IBAction)yellowTouched:(id)sender {
-    [self changeBrushColor:[UIColor colorWithRed:255/255.0f green:228/255.0f blue:27/255.0f alpha:1.0f]];
+    [self changeBrushColorWithRed:255/255.0f Green:228/255.0f Blue:27/255.0f];
     NSLog(@"Yellow");
 }
 
 - (IBAction)greenTouched:(id)sender {
-    [self changeBrushColor:[UIColor colorWithRed:159/255.0f green:228/255.0f blue:27/255.0f alpha:1.0f]];
+    [self changeBrushColorWithRed:159/255.0f Green:228/255.0f Blue:27/255.0f];
     NSLog(@"Green");
 }
 
 - (IBAction)blueTouched:(id)sender {
-    [self changeBrushColor:[UIColor colorWithRed:114/255.0f green:183/255.0f blue:254/255.0f alpha:1.0f]];
+    [self changeBrushColorWithRed:114/255.0f Green:183/255.0f Blue:254/255.0f];
     NSLog(@"Blue");
 }
 
 - (IBAction)purpleTouched:(id)sender {
-//    [self changeBrush Color:[UIColor colorWithRed:179/255.0f green:58/255.0f blue:229/255.0f alpha:1.0f]];
     [self.paintView setBrushColorWithRed:179/255.0f green:58/255.0f blue:229/255.0f];
     NSLog(@"Purple");
 }
@@ -83,12 +82,9 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)changeBrushColor:(UIColor*)color
+- (void)changeBrushColorWithRed:(CGFloat)red Green:(CGFloat)green Blue:(CGFloat)blue
 {
-    CGColorRef colorref = color.CGColor;
-    const CGFloat *components = CGColorGetComponents(colorref);
-    // Defer to the OpenGL view to set the brush color
-    [self.paintView setBrushColorWithRed:components[0] green:components[1] blue:components[2]];
+    [self.paintView setBrushColorWithRed:red green:green blue:blue];
 }
 - (void)eraseView
 {
