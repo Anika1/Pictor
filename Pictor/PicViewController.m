@@ -25,6 +25,8 @@
 
 @interface PicViewController ()
 
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *CameraButton;
+
 @property (weak, nonatomic) IBOutlet PaintingView *paintView;
 
 @end
@@ -102,4 +104,45 @@
     
     [self presentViewController:activityVC animated:YES completion:nil];
 }
+
+- (IBAction)cameraButtonPressed:(id)sender {
+    
+    
+    //isSourceTypeAvailable: UIImagePickerControllerSourceTypeSavedPhotosAlbum;
+    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+    picker.delegate = self;
+    picker.allowsEditing = YES;
+    picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    
+    [self presentViewController:picker animated:YES completion:NULL];
+    
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+    
+    // UIImage *chosenImage =
+    // info[UIImagePickerControllerEditedImage];
+    //self.imageView.image = chosenImage;
+    
+    [picker dismissViewControllerAnimated:YES completion:NULL];
+    
+    
+    // UIImagePickerControllerEditedImage is useful if you allowed
+    // editing of images
+    UIImage *image = [info objectForKey:UIImagePickerControllerEditedImage];
+    
+    if (image == nil)
+        image = [info objectForKey:UIImagePickerControllerOriginalImage];
+    NSLog(@"Hi");
+    // Do something with the image
+    
+}
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
+    
+    [picker dismissViewControllerAnimated:YES completion:NULL];
+    
+    
+    
+}
+
 @end

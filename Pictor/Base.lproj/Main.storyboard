@@ -208,7 +208,11 @@
                         </barButtonItem>
                     </toolbarItems>
                     <navigationItem key="navigationItem" id="x41-d8-CUt">
-                        <barButtonItem key="leftBarButtonItem" systemItem="camera" id="5q0-oG-L1s"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="camera" id="5q0-oG-L1s">
+                            <connections>
+                                <action selector="cameraButtonPressed:" destination="ldQ-6T-CC6" id="Nt9-CH-ihF"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="action" id="v5F-Ba-eub">
                             <color key="tintColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                         </barButtonItem>
@@ -216,6 +220,7 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="CameraButton" destination="5q0-oG-L1s" id="4kq-rw-YYc"/>
                         <outlet property="paintView" destination="xAD-lp-jqP" id="SvT-3a-sQq"/>
                     </connections>
                 </viewController>
