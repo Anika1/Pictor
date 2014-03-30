@@ -25,11 +25,17 @@
 
 @interface PicViewController ()
 
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *CameraButton;
+
 @property (weak, nonatomic) IBOutlet PaintingView *paintView;
 
 @end
 
 @implementation PicViewController
+
+- (IBAction)clearTouched:(id)sender {
+    [self eraseView];
+}
 
 - (IBAction)redTouched:(id)sender {
     [self changeBrushColorWithRed: 255/255.0f Green:63/255.0f Blue:46/255.0f];

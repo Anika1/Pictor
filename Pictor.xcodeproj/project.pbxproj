@@ -49,7 +49,6 @@
 		D9F0D9D118E7B435001BF205 /* fileUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F0D9B418E7B435001BF205 /* fileUtil.m */; };
 		D9F0D9D218E7B435001BF205 /* PaintingView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F0D9B618E7B435001BF205 /* PaintingView.m */; };
 		D9F0D9D318E7B435001BF205 /* PicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F0D9B818E7B435001BF205 /* PicViewController.m */; };
-		D9F0D9D418E7B435001BF205 /* Relationship-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = D9F0D9B918E7B435001BF205 /* Relationship-arrow.png */; };
 		D9F0D9D518E7B435001BF205 /* shaderUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = D9F0D9BA18E7B435001BF205 /* shaderUtil.c */; };
 /* End PBXBuildFile section */
 
@@ -116,7 +115,6 @@
 		D9F0D9B618E7B435001BF205 /* PaintingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaintingView.m; sourceTree = "<group>"; };
 		D9F0D9B718E7B435001BF205 /* PicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicViewController.h; sourceTree = "<group>"; };
 		D9F0D9B818E7B435001BF205 /* PicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicViewController.m; sourceTree = "<group>"; };
-		D9F0D9B918E7B435001BF205 /* Relationship-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Relationship-arrow.png"; sourceTree = "<group>"; };
 		D9F0D9BA18E7B435001BF205 /* shaderUtil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = shaderUtil.c; sourceTree = "<group>"; };
 		D9F0D9BB18E7B435001BF205 /* shaderUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shaderUtil.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -184,7 +182,6 @@
 				D9F0D9B618E7B435001BF205 /* PaintingView.m */,
 				D9F0D9B718E7B435001BF205 /* PicViewController.h */,
 				D9F0D9B818E7B435001BF205 /* PicViewController.m */,
-				D9F0D9B918E7B435001BF205 /* Relationship-arrow.png */,
 				84A3A2AB18E74AF500409E73 /* XYZAppDelegate.h */,
 				84A3A2AC18E74AF500409E73 /* XYZAppDelegate.m */,
 				84A3A2AE18E74AF500409E73 /* Main.storyboard */,
@@ -372,7 +369,6 @@
 				D9F0D9C318E7B435001BF205 /* Orange.png in Resources */,
 				D9F0D9D018E7B435001BF205 /* Small.png in Resources */,
 				D9F0D9BD18E7B435001BF205 /* Black.png in Resources */,
-				D9F0D9D418E7B435001BF205 /* Relationship-arrow.png in Resources */,
 				D9F0D9C918E7B435001BF205 /* SelectPurple.png in Resources */,
 				84A3A2A718E74AF500409E73 /* InfoPlist.strings in Resources */,
 				D9F0D9BE18E7B435001BF205 /* Blue.png in Resources */,

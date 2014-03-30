@@ -161,7 +161,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="smallTouched:" destination="ldQ-6T-CC6" eventType="touchUpInside" id="28Z-ca-nic"/>
+                                    <action selector="smallTouched:" destination="ldQ-6T-CC6" eventType="touchUpInside" id="COe-EU-Mtf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="yuF-YY-UQG">
@@ -171,7 +171,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="mediumTouched:" destination="ldQ-6T-CC6" eventType="touchUpInside" id="X91-QJ-RSv"/>
+                                    <action selector="mediumTouched:" destination="ldQ-6T-CC6" eventType="touchUpInside" id="dYw-yv-FqF"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="B0e-k1-vnt">
@@ -181,7 +181,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="largeTouched:" destination="ldQ-6T-CC6" eventType="touchUpInside" id="xB0-rB-OOt"/>
+                                    <action selector="largeTouched:" destination="ldQ-6T-CC6" eventType="touchUpInside" id="xUb-Gc-Iyb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4Nb-Ji-YEH">
@@ -191,7 +191,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="clearTouched:" destination="ldQ-6T-CC6" eventType="touchUpInside" id="ZGQ-7L-gRo"/>
+                                    <action selector="clearTouched:" destination="ldQ-6T-CC6" eventType="touchUpInside" id="AGL-sf-0Vy"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" id="xAD-lp-jqP" customClass="PaintingView">
@@ -208,6 +208,11 @@
                         </barButtonItem>
                     </toolbarItems>
                     <navigationItem key="navigationItem" id="x41-d8-CUt">
+                        <barButtonItem key="leftBarButtonItem" systemItem="camera" id="5q0-oG-L1s">
+                            <connections>
+                                <action selector="cameraButtonPressed:" destination="ldQ-6T-CC6" id="Nt9-CH-ihF"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="action" id="v5F-Ba-eub">
                             <color key="tintColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                         </barButtonItem>
@@ -215,6 +220,7 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="CameraButton" destination="5q0-oG-L1s" id="4kq-rw-YYc"/>
                         <outlet property="paintView" destination="xAD-lp-jqP" id="SvT-3a-sQq"/>
                     </connections>
                 </viewController>
