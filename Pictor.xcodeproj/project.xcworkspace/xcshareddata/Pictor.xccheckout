@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0D339F77-2896-46A3-BA0B-0F6902E8905D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Pictor</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>954438D8-DB9F-4F95-B0C1-6E058B2114F2</key>
+		<string>https://github.com/Anika1/Pictor.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Pictor.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>954438D8-DB9F-4F95-B0C1-6E058B2114F2</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Anika1/Pictor.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>954438D8-DB9F-4F95-B0C1-6E058B2114F2</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>954438D8-DB9F-4F95-B0C1-6E058B2114F2</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Pictor</string>
+		</dict>
+	</array>
+</dict>
+</plist>

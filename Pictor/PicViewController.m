@@ -90,4 +90,16 @@
 {
 	[self.paintView erase];
 }
+- (IBAction)shareButtonPressed:(id)sender {
+    NSString *message = @"Hello World!";
+    UIImage *imageToShare = [UIImage imageNamed:@"facebook.jpeg"];
+    
+    NSArray *postItems = @[message, imageToShare];
+    
+    UIActivityViewController *activityVC = [[UIActivityViewController alloc]
+                                            initWithActivityItems:postItems
+                                            applicationActivities:nil];
+    
+    [self presentViewController:activityVC animated:YES completion:nil];
+}
 @end
