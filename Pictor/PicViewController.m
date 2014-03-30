@@ -114,12 +114,19 @@
     }
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex{
 	
-	//Capture
+	//Take Picture
 	if(buttonIndex == 0){
+     
+        UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+        picker.delegate = self;
+        picker.allowsEditing = YES;
+        picker.sourceType = UIImagePickerControllerSourceTypeCamera;
         
+        [self presentViewController:picker animated:YES completion:NULL];
+      
 	}
 	
-	//Select
+	//Select Photo
 	if (buttonIndex == 1){
         UIImagePickerController *picker = [[UIImagePickerController alloc] init];
         picker.delegate = self;
@@ -127,9 +134,7 @@
         picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
         
         [self presentViewController:picker animated:YES completion:NULL];
-        
 
-        
 	}
 	else
 	{
@@ -163,5 +168,6 @@
     
     
 }
+
 
 @end
