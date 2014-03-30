@@ -81,7 +81,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hn6-81-GPy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3513" y="-455"/>
+            <point key="canvasLocation" x="3491" y="-469"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wSY-cH-R7r">
@@ -100,9 +100,151 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u3u-Gw-dRz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2429" y="-495"/>
+            <point key="canvasLocation" x="2439" y="-469"/>
+        </scene>
+        <!--Pic View Controller-->
+        <scene sceneID="RRY-W5-y2I">
+            <objects>
+                <viewController id="ldQ-6T-CC6" customClass="PicViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MfE-5x-4qg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="PQT-Po-03g">
+                                <rect key="frame" x="20" y="428" width="50" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Red" image="Red.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="redTouched:" destination="ldQ-6T-CC6" eventType="touchUpInside" id="u5g-ME-myd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="GuJ-Ca-M0W">
+                                <rect key="frame" x="136" y="427" width="50" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Green" image="Green.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="greenTouched:" destination="ldQ-6T-CC6" eventType="touchUpInside" id="S56-ec-kTo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0j7-ai-3XP">
+                                <rect key="frame" x="78" y="428" width="50" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Yellow" image="Yellow.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="yellowTouched:" destination="ldQ-6T-CC6" eventType="touchUpInside" id="26C-Pr-YqF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="DwQ-c9-h8x">
+                                <rect key="frame" x="194" y="428" width="50" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Blue" image="Light Blue.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="blueTouched:" destination="ldQ-6T-CC6" eventType="touchUpInside" id="yS3-Xj-f93"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tP5-Iu-UqN">
+                                <rect key="frame" x="252" y="428" width="50" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Purple" image="Purple.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="purpleTouched:" destination="ldQ-6T-CC6" eventType="touchUpInside" id="gXg-fJ-esB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Dq7-OO-AVN">
+                                <rect key="frame" x="24" y="378" width="41" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Small" image="Small.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="smallTouched:" destination="ldQ-6T-CC6" eventType="touchUpInside" id="28Z-ca-nic"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="yuF-YY-UQG">
+                                <rect key="frame" x="83" y="378" width="41" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Medium" image="Medium.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="mediumTouched:" destination="ldQ-6T-CC6" eventType="touchUpInside" id="X91-QJ-RSv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="B0e-k1-vnt">
+                                <rect key="frame" x="140" y="378" width="41" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Large" image="Large.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="largeTouched:" destination="ldQ-6T-CC6" eventType="touchUpInside" id="xB0-rB-OOt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4Nb-Ji-YEH">
+                                <rect key="frame" x="257" y="378" width="41" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Clear" image="Clear.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearTouched:" destination="ldQ-6T-CC6" eventType="touchUpInside" id="ZGQ-7L-gRo"/>
+                                </connections>
+                            </button>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="LWd-X5-32e">
+                                <rect key="frame" x="0.0" y="33" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem systemItem="camera" id="VS0-kF-366">
+                                        <color key="tintColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="flexibleSpace" id="rLH-UZ-a4j">
+                                        <color key="tintColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="action" id="v5F-Ba-eub">
+                                        <color key="tintColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <view contentMode="scaleToFill" id="xAD-lp-jqP" customClass="PaintingView">
+                                <rect key="frame" x="20" y="90" width="280" height="280"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="paintView" destination="xAD-lp-jqP" id="SvT-3a-sQq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fks-WS-bqb" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2933" y="251"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Clear.png" width="160" height="160"/>
+        <image name="Green.png" width="60" height="120"/>
+        <image name="Large.png" width="160" height="160"/>
+        <image name="Light Blue.png" width="60" height="120"/>
+        <image name="Medium.png" width="160" height="160"/>
+        <image name="Purple.png" width="60" height="120"/>
+        <image name="Red.png" width="60" height="120"/>
+        <image name="Small.png" width="160" height="160"/>
+        <image name="Yellow.png" width="60" height="120"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
