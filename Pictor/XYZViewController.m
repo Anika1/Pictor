@@ -26,4 +26,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)cameraButtonPressed:(id)sender {
+
+    
+//isSourceTypeAvailable: UIImagePickerControllerSourceTypeSavedPhotosAlbum;
+    
+
+    
+    
+}
 @end

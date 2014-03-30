@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface XYZViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIToolbar *cameraButton;
+- (IBAction)cameraButtonPressed:(id)sender;
 
 @end
