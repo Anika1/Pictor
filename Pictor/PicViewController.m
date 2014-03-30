@@ -77,6 +77,15 @@
     //  [self.paintView setBrushWidth:1.0];
 }
 
+- (IBAction)shareTouched:(id)sender {
+    
+    UIImage *yourImage = [self.paintView imageRepresentation];
+    UIActivityViewController *activityVC = [[UIActivityViewController alloc] initWithActivityItems:[NSArray arrayWithObjects:@"Image",yourImage, nil] applicationActivities:nil];
+    activityVC.excludedActivityTypes = @[ UIActivityTypeAddToReadingList ,UIActivityTypeAssignToContact,
+        UIActivityTypePrint];
+    [self presentViewController:activityVC animated:YES completion:nil];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -167,6 +176,7 @@
     
     
     image = [info objectForKey:UIImagePickerControllerOriginalImage];
+    //[self addImageToView:image];
     imageView.image = image;
     NSLog(@"Hi");
     // Do something with the image
@@ -175,10 +185,37 @@
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
     
     [picker dismissViewControllerAnimated:YES completion:NULL];
-    
-    
-    
 }
+/*
+-(void) addImageToView:(UIImage*)pic{
+    UIImage* imageToAdd= pic;
+    
+    
+    
+    // all images added to the paining view MUST be 512x512.
+    // You can also add smaller images (even transformed ones) using this method - just add it to a UIView //and then get it's graphics context
 
-
+    UIView* imageView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 512, 512)];
+	
+	
+	
+	UIImageView* subView   = [[UIImageView alloc] initWithImage:imageToAdd];
+	
+    
+    [imageView addSubview:subView];
+	UIImage* blendedImage =nil;
+	
+	
+	
+	UIGraphicsBeginImageContext(imageView.frame.size);
+	
+	[imageView.layer renderInContext:UIGraphicsGetCurrentContext()];
+	
+	blendedImage = UIGraphicsGetImageFromCurrentImageContext();
+	UIGraphicsEndImageContext();
+	[self.paintView mergeWithImage: blendedImage ];
+    
+    
+    
+}*/
 @end

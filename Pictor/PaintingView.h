@@ -61,6 +61,9 @@
 
 - (void)erase;
 - (void)setBrushColorWithRed:(CGFloat)red green:(CGFloat)green blue:(CGFloat)blue;
+-(void) setImage:(UIImage*)newImage;
+-(void) mergeWithImage:(UIImage*) image;
+-(UIImage*) imageRepresentation;
 //- (void)setBrushWidth:(CGFloat)width;
 
 @end

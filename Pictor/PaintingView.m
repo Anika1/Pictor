@@ -128,6 +128,8 @@ typedef struct {
     // Buffer Objects
     GLuint vboId;
     
+    GLuint stampTexture;
+    
     BOOL initialized;
 }
 
@@ -342,6 +344,7 @@ typedef struct {
     glEnable(GL_BLEND);
     glBlendFunc(GL_ONE, GL_ONE_MINUS_SRC_ALPHA);
     
+    
     // Playback recorded path, which is "Shake Me"
     NSMutableArray* recordedPaths = [NSMutableArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Recording" ofType:@"data"]];
     if([recordedPaths count])
@@ -425,7 +428,7 @@ typedef struct {
 	
 	// Clear the buffer
 	glBindFramebuffer(GL_FRAMEBUFFER, viewFramebuffer);
-	glClearColor(1.0, 1.0, 1.0, 0.0);
+	glClearColor(1.0, 1.0, 1.0, 1.0);
 	glClear(GL_COLOR_BUFFER_BIT);
 	
 	// Display the buffer
@@ -577,6 +580,188 @@ typedef struct {
         glUseProgram(program[PROGRAM_POINT].id);
         glUniform4fv(program[PROGRAM_POINT].uniform[UNIFORM_VERTEX_COLOR], 1, brushColor);
     }
+}
+
+-(void) mergeWithImage:(UIImage*) image
+{
+    if(image==nil)
+    {
+        return;
+    }
+    glPushMatrix();
+    glColor4f(256,
+              256,
+              256,
+              1.0);
+    glBlendFunc(GL_ONE, GL_ONE_MINUS_SRC_ALPHA);
+    glGenTextures(1, &stampTexture);
+    glBindTexture(GL_TEXTURE_2D, stampTexture);
+    glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MIN_FILTER,GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MAG_FILTER,GL_LINEAR);
+    
+    GLuint imgwidth = CGImageGetWidth(image.CGImage);
+    GLuint imgheight = CGImageGetHeight(image.CGImage);
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+    void *imageData = malloc( imgheight * imgwidth * 4 );
+    CGContextRef context2 = CGBitmapContextCreate( imageData, imgwidth, imgheight, 8, 4 * imgwidth, colorSpace, kCGImageAlphaPremultipliedLast | kCGBitmapByteOrder32Big );
+    CGContextTranslateCTM (context2, 0, imgheight);
+    CGContextScaleCTM (context2, 1.0, -1.0);
+    CGColorSpaceRelease( colorSpace );
+    CGContextClearRect( context2, CGRectMake( 0, 0, imgwidth, imgheight ) );
+    CGContextTranslateCTM( context2, 0, imgheight - imgheight );
+    CGContextDrawImage( context2, CGRectMake( 0, 0, imgwidth, imgheight ), image.CGImage );
+    
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, imgwidth, imgheight, 0, GL_RGBA, GL_UNSIGNED_BYTE, imageData);
+    
+    CGContextRelease(context2);
+    
+    free(imageData);
+    
+    static const GLfloat texCoords[] = {
+        0.0, 1.0,
+        1.0, 1.0,
+        0.0, 0.0,
+        1.0, 0.0
+    };
+    
+    glEnableClientState(GL_TEXTURE_COORD_ARRAY);
+    glTexCoordPointer(2, GL_FLOAT, 0, texCoords);
+    
+    glEnableClientState(GL_VERTEX_ARRAY);
+    glEnableClientState(GL_NORMAL_ARRAY);
+    glEnableClientState(GL_TEXTURE_COORD_ARRAY);
+    
+    
+   /*  These arrays would need to be changed if the size of the paintview changes. You must make sure that all image imput is 64x64, 256x256, 512x512 or 1024x1024.  Here we are using 512, but you can use 1024 as follows:
+     
+     use the numbers:
+     {
+     0.0, height, 0.0,
+     280, height, 0.0,
+     0.0, height-280, 0.0,
+     280, height-280, 0.0
+     }*/
+     
+    
+    static const GLfloat vertices[] = {
+        0.0,  200, 0.0,
+        280,  200, 0.0,
+        0.0, -32, 0.0,
+        280, -32, 0.0
+    };
+    
+    static const GLfloat normals[] = {
+        0.0, 0.0, 280,
+        0.0, 0.0, 280,
+        0.0, 0.0, 280,
+        0.0, 0.0, 280
+    };
+    
+    glBindTexture(GL_TEXTURE_2D, stampTexture);
+    glVertexPointer(3, GL_FLOAT, 0, vertices);
+    glNormalPointer(GL_FLOAT, 0, normals);
+    glTexCoordPointer(2, GL_FLOAT, 0, texCoords);
+    glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
+    
+    glPopMatrix();
+    
+    glDeleteTextures( 1, &stampTexture );
+    //set back the brush
+    glBindTexture(GL_TEXTURE_2D, brushTexture.id);
+    glColor4f(brushColor[0],
+              brushColor[1],
+              brushColor[2],
+              1.0);
+    
+    // Display the buffer
+    glBindRenderbufferOES(GL_RENDERBUFFER_OES, viewRenderbuffer);
+    [context presentRenderbuffer:GL_RENDERBUFFER_OES];
+    
+}
+
+-(void) setImage:(UIImage*)newImage
+{
+    [EAGLContext setCurrentContext:context];
+    
+    // Clear the buffer - but dont display it
+    glBindFramebufferOES(GL_FRAMEBUFFER_OES, viewFramebuffer);
+    glClearColor(0.0, 0.0, 0.0, 0.0);
+    glClear(GL_COLOR_BUFFER_BIT);
+    
+    [self mergeWithImage:newImage];
+}
+
+void ProviderReleaseData ( void *info, const void *data, size_t size ) {
+    
+	free((void*)data);
+}
+
+-(UIImage*) upsideDownImageRepresenation{
+    
+	
+	int imageWidth = CGRectGetWidth([self bounds])*2;
+	int imageHeight = CGRectGetHeight([self bounds])*2;
+	
+	//image buffer for export
+	NSInteger myDataLength = imageWidth* imageHeight * 4;
+	
+	// allocate array and read pixels into it.
+	GLubyte *tempImagebuffer = (GLubyte *) malloc(myDataLength);
+    
+    glReadPixels(0, 0, imageWidth, imageHeight, GL_RGBA, GL_UNSIGNED_BYTE, tempImagebuffer);
+	
+	
+	
+	// make data provider with data.
+	CGDataProviderRef provider = CGDataProviderCreateWithData(NULL, tempImagebuffer, myDataLength, ProviderReleaseData);
+	
+	
+	// prep the ingredients
+	int bitsPerComponent = 8;
+	int bitsPerPixel = 32;
+	int bytesPerRow = 4 * imageWidth;
+	CGColorSpaceRef colorSpaceRef = CGColorSpaceCreateDeviceRGB();
+	CGBitmapInfo bitmapInfo = kCGImageAlphaPremultipliedLast;
+	
+	CGColorRenderingIntent renderingIntent = kCGRenderingIntentDefault;
+	
+	
+	// make the cgimage
+	CGImageRef imageRef = CGImageCreate(imageWidth, imageHeight, bitsPerComponent, bitsPerPixel, bytesPerRow, colorSpaceRef, bitmapInfo, provider, NULL, NO, renderingIntent);
+	
+	
+	
+	// then make the uiimage from that
+	
+	UIImage *myImage =  [UIImage imageWithCGImage:imageRef] ;
+	
+	CGDataProviderRelease(provider);
+	CGImageRelease(imageRef);
+	CGColorSpaceRelease(colorSpaceRef);
+    
+    return myImage;
+}
+
+
+
+-(UIImage*) imageRepresentation{
+	
+	UIImageView* upsideDownImageView=[[UIImageView alloc] initWithImage: [self upsideDownImageRepresenation]];
+    
+	upsideDownImageView.transform=CGAffineTransformScale(upsideDownImageView.transform, 1, -1);
+	
+	UIView* container=[[UIView alloc] initWithFrame:upsideDownImageView.frame];
+	[container addSubview:upsideDownImageView];
+	UIImage* toReturn=nil;
+    
+	UIGraphicsBeginImageContext(container.frame.size);
+	
+	[container.layer renderInContext:UIGraphicsGetCurrentContext()];
+	
+	toReturn = UIGraphicsGetImageFromCurrentImageContext();
+	UIGraphicsEndImageContext();
+	
+	return toReturn;
 }
 
 @end
